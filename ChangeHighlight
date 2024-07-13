@@ -1,26 +1,26 @@
 Sub ChangeHighlight()
-    'ws as a worksheet object
+    ' ws as a worksheet object
     Dim ws As Worksheet
     
-    'cell as a range object to iterate through each cell
+    ' Cell as a range object to iterate through each cell
     Dim cell As Range
     
-    'storing original row color and replacing with new
+    ' Storing original row color and replacing with new
     Dim rowColor As Long
     Dim newColor As Long
     
-    'modify hydrants worksheet
-    Set ws = ThisWorkbook.Sheets("testing")
+    ' Modify worksheet
+    Set ws = ThisWorkbook.Sheets(" ") ' Replace with spreadsheet name
     
-    'get original color
+    ' Get original color
     rowColor = RGB(153, 255, 204)
     
-    'define a new color
+    ' Define a new color
     newColor = RGB(153, 255, 204)
     
-    'loop through each cell in range
+    ' Loop through each cell in range
     For Each cell In ws.UsedRange
-        'change row color
+        ' Change row color
         If cell.Interior.Color = rowColor Then
             cell.EntireRow.Interior.Color = newColor
         End If
