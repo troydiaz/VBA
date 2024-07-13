@@ -4,7 +4,7 @@ Sub ReplaceBlanksWithValue()
     Dim cell As Range
     
     ' Set the worksheet you want to work with
-    Set ws = ThisWorkbook.Sheets("Hydrants Transfer")
+    Set ws = ThisWorkbook.Sheets(" ") ' Replace blank with spreadsheet name
     
     ' Set the range you want to check for blank cells
     Set rng = ws.Range("F2:F2925") ' This will cover the used range of the worksheet
@@ -13,12 +13,12 @@ Sub ReplaceBlanksWithValue()
     For Each cell In rng
         ' Check if the cell is blank, contains only spaces, or has a formula that returns an empty string
         If IsEmpty(cell.Value) Or Trim(cell.Value) = "" Then
-            ' Replace blank cell with 0
+            ' Replace blank cell with 0 
             cell.Value = 0
         End If
     Next cell
     
     ' Inform the user that the operation is complete
-    MsgBox "All blank cells have been replaced with 0s.", vbInformation
+    MsgBox "All blank cells have been replaced with updated value.", vbInformation
 End Sub
 
