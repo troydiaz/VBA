@@ -1,4 +1,4 @@
-Sub changeHighlight()
+Sub ChangeHighlight()
     'ws as a worksheet object
     Dim ws As Worksheet
     
@@ -12,10 +12,10 @@ Sub changeHighlight()
     'modify hydrants worksheet
     Set ws = ThisWorkbook.Sheets("testing")
     
-    'get original red color
+    'get original color
     rowColor = RGB(153, 255, 204)
     
-    'define a better color
+    'define a new color
     newColor = RGB(153, 255, 204)
     
     'loop through each cell in range
