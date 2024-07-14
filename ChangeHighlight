@@ -13,10 +13,10 @@ Sub ChangeHighlight()
     Set ws = ThisWorkbook.Sheets(" ") ' Replace with spreadsheet name
     
     ' Get original color
-    rowColor = RGB(153, 255, 204)
+    rowColor = RGB(,,,) ' Fill in RGB value
     
     ' Define a new color
-    newColor = RGB(153, 255, 204)
+    newColor = RGB(,,,)
     
     ' Loop through each cell in range
     For Each cell In ws.UsedRange
