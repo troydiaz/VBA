@@ -1,3 +1,0 @@
-Private Sub AutoFitWidth(ByVal Target As Range)
-  cells.EntireColumn.AutoFit
-End Sub
